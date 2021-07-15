@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* This defines what 1rem is */
+    /* font-size: 62.5%;  */
+    /* 1 rem = 10px; 10px/16px = 62.5% */
+
+    /* @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    } */
+}
+
+body{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+@font-face{
+    font-family: avant;
+    src: url('/font/ITC\ Avant\ Garde\ Gothic\ Bold.otf') format('opentype');;
+}
+
+/* styling for header */
+
+.header{
+    /* height: 100vh; */
+    background-color: #F4F1E9;
+}
+
+.navbar{
+    background-color: #101C4F; 
+    padding: 2rem 0;
+}
+
+.nav_list{
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin-left: auto;
+    margin-right: 5rem;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+}
+
+.home{
+    border-bottom: 1px solid #BFB98B;
+}
+
+.nav_item{
+
+}
+
+.header_box{
+    padding: 5rem 0;
+}
+
+.header_box-image{
+    width: 60%;
+    margin: auto;
+}
+
+.logo{
+    width: 100%;
+    object-fit: contain;
+}
+
+/* our mission section */
+.mission{
+    background-color: #101C4F;
+    text-align: center;
+    padding: 3rem 0 5rem;
+}
+
+.secondary_header{
+    font-size: 2.2rem;
+    margin: 0 0 .9rem 0;
+    font-family: avant;
+
+}
+.secondary_p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    
+}
+
+.width{
+    width: 80%;
+    margin: auto;
+}
+
+.colored{
+    color: #FDC700;
+}
+
+/* our vision section */
+.vision{
+    background-color: #B19253;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+/* .secondary_header{
+    font-size: 2.3rem;
+    margin: 0 0 .8rem 0;
+}
+.secondary_p{
+    font-size: 1.4rem;
+}
+
+.width{
+    width: 80%;
+    margin: auto;
+} */
+
+.quote{
+    color: #101C4F;
+    /* font-weight: 800; */
+    font-size: 1.5rem;
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    font-family: avant;
+    padding: .9rem 0 0 0;
+}
+
+.quote span {
+    display: block;
+}
+
+/* what we do section */
+.we{
+    background-color: #F4F1E9;
+    padding: 5rem 0;
+}
+
+.we_box{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+.we_image{
+    width: 40%;
+}
+.we_image img{
+    width: 100%;
+    object-fit: contain;
+}
+.we_image-top{
+    margin: 0 0 0 -2.5rem;
+}
+.we_image-mid{
+    margin: 1.5rem 0 0;
+}
+.we_p{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.we_text{
+    width: 56%;
+    color: #101C4F;
+}
+.we_text-p{
+    font-size: 1rem;
+    font-size: 300;
+    padding: 0 0 1.5rem 0;
+}
+
+/* styling for involved */
+.involved{
+    background-color: #B19253;
+    padding: 3rem 0;
+}
+.involved_box{
+    display: flex;
+    width: 85%;
+    margin: 0 auto 1.5rem;
+    justify-content: space-between;
+}
+.involved_text{
+    width: 50%;
+}
+.involved_design{
+    width: 35%;
+    /* padding: 0 3rem;
+    background-image:linear-gradient( to right, rgb(37, 118, 0) 30%, rgb(0, 23, 49) 30%); */
+    /* box-shadow: 0 8px 6px -6px black; */
+}
+/* 
+.involved_header{
+    font-size: 5.5rem;
+    text-align: right;
+    font-family: avant;
+    line-height: 1;
+    padding: 1rem 0 0;
+}
+
+.involved_header-span{
+    display: block;
+} */
+
+
+/* extra design */
+.involved_d{
+    width: 45%;
+    display: flex;
+    position: relative;
+    /* padding: 0 3rem;
+    background-image:linear-gradient( to right, rgb(37, 118, 0) 30%, rgb(0, 23, 49) 30%); */
+    /* box-shadow: 0 8px 6px -6px black; */
+}
+
+.green{
+    width: 35%;
+    background-color: green;
+}
+
+.blue{
+    width: 65%;
+    background-color:  #101C4F;
+    box-shadow: 0 5px 9px -3px black;
+}
+
+.involved_h{
+    font-size: 6rem;
+    text-align: right;
+    font-family: avant;
+    line-height: 1;
+    /* padding: 1rem 0 0; */
+    position: absolute;
+    right: 2rem;
+    top: 2.8rem;
+
+}
+
+.involved_h-span{
+    display: block;
+}
+
+.btn_more{
+    text-decoration: none;
+    /* display: block; */
+    position: absolute;
+    color: rgb(0, 23, 49);
+    display: flex;
+    align-items: center;
+    /* font-weight: 300; */
+    padding: .5rem .8rem .5rem 1rem;
+    border-radius: 6rem;
+    right: 7rem;
+    bottom: 3.8rem;
+    background-image:linear-gradient( 100deg, #F9CA00 70%, #E2B308 70%); 
+    box-shadow: 0 4px 5px -3px rgb(2, 62, 131);
+}
+
+.btn_more-text{
+    margin: 0 1.7rem 0 0;
+}
+.btn_more-icon{
+    height: 1rem;
+    display: flex;
+}
+
+/* styling for donate */
+.donate{
+    background-color: #101C4F;
+    padding: 5rem 5.5rem;
+}
+
+.donate_box{
+    display: flex;
+    width: 82%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.donate_text{
+    font-size: 8.5rem;
+    font-family: avant;
+}
+
+.donate_btn{
+    display: block;
+    margin: 0 0 1rem 0;
+}
+
+.donate_options img{
+    width: 100%;
+    object-fit: contain;
+}
+
+/* about styling */
+.about{
+    background-color: #F4F1E9;
+    padding: 5rem 0 3rem;
+}
+
+.about_header{
+    width: 80%;
+    margin: auto;
+}
+
+.founder_image img,
+.about_header img,
+.footer_icon img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.founder{
+    color: #101C4F;
+    display: flex;
+    margin: 3rem auto 0;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.founder-p{
+    font-size: 1.2rem;
+    font-size: 300;
+    padding: 0 0 1rem 0;
+}
+
+.founder_image{
+    width: 32%;
+}
+
+.founder_text{
+    width: 65%;
+}
+
+/* footer styling */
+.footer{
+    background-color: #101C4F;
+    padding: 3rem 0;
+}
+
+.footer_box{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_icon{
+    display: inline-block;
+}
