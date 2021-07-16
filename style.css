@@ -10,7 +10,7 @@
 
 html {
     /* This defines what 1rem is */
-    /* font-size: 62.5%;  */
+    font-size: 16px; 
     /* 1 rem = 10px; 10px/16px = 62.5% */
 
     /* @include respond(tab-land) { // width < 1200?
@@ -29,7 +29,7 @@ html {
 body{
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    /* font-size: 16px; */
 }
 
 @font-face{
@@ -207,51 +207,50 @@ body{
 }
 .involved_design{
     width: 35%;
-    /* padding: 0 3rem;
-    background-image:linear-gradient( to right, rgb(37, 118, 0) 30%, rgb(0, 23, 49) 30%); */
+    text-align: right;
+    padding: 0 3rem;
+    background-image:linear-gradient( to right, rgb(37, 118, 0) 38%, rgb(0, 23, 49) 38%);
     /* box-shadow: 0 8px 6px -6px black; */
 }
-/* 
+
 .involved_header{
-    font-size: 5.5rem;
-    text-align: right;
+    font-size: 5.6rem;
     font-family: avant;
     line-height: 1;
-    padding: 1rem 0 0;
+    padding: 2rem 0 0;
 }
 
 .involved_header-span{
     display: block;
-} */
+}
 
 
 /* extra design */
 .involved_d{
-    width: 45%;
+    /* width: 45%;
     display: flex;
-    position: relative;
+    position: relative; */
     /* padding: 0 3rem;
     background-image:linear-gradient( to right, rgb(37, 118, 0) 30%, rgb(0, 23, 49) 30%); */
     /* box-shadow: 0 8px 6px -6px black; */
 }
 
-.green{
-    width: 35%;
+/* .green{
+    width: 45%;
     background-color: green;
 }
 
 .blue{
-    width: 65%;
+    width: 55%;
     background-color:  #101C4F;
     box-shadow: 0 5px 9px -3px black;
-}
+} */
 
-.involved_h{
+/* .involved_h{
     font-size: 6rem;
     text-align: right;
     font-family: avant;
     line-height: 1;
-    /* padding: 1rem 0 0; */
     position: absolute;
     right: 2rem;
     top: 2.8rem;
@@ -260,32 +259,38 @@ body{
 
 .involved_h-span{
     display: block;
-}
+} */
 
 .btn_more{
     text-decoration: none;
-    /* display: block; */
-    position: absolute;
+    display: inline-block;
+    /* position: absolute; */
     color: rgb(0, 23, 49);
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     /* font-weight: 300; */
     padding: .5rem .8rem .5rem 1rem;
     border-radius: 6rem;
-    right: 7rem;
-    bottom: 3.8rem;
+    /* right: 7rem;
+    bottom: 3.8rem; */
     background-image:linear-gradient( 100deg, #F9CA00 70%, #E2B308 70%); 
     box-shadow: 0 4px 5px -3px rgb(2, 62, 131);
+    margin: 3rem 4rem 0 0;
 }
 
 .btn_more-text{
     margin: 0 1.7rem 0 0;
 }
 .btn_more-icon{
-    height: 1rem;
-    display: flex;
+    width: 1rem;
+    display: inline-block;
+    /* display: flex; */
+    /* padding: .2rem 0 0; */
 }
-
+.btn_more-icon img{
+    width: 100%;
+    object-fit: contain;
+}
 /* styling for donate */
 .donate{
     background-color: #101C4F;
@@ -297,6 +302,7 @@ body{
     width: 82%;
     margin: auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 .donate_text{
@@ -308,7 +314,9 @@ body{
     display: block;
     margin: 0 0 1rem 0;
 }
-
+.donate_options{
+    width: 43%;
+}
 .donate_options img{
     width: 100%;
     object-fit: contain;
@@ -372,3 +380,97 @@ body{
 .footer_icon{
     display: inline-block;
 }
+
+@media screen and (max-width: 1024px) {
+    html{
+        font-size: 12px;
+    }
+    .donate_text{
+        font-size: 8rem;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    html{
+        font-size: 10px;
+    }
+    .donate_text{
+        font-size: 7rem;
+    }
+    .btn_more{
+        margin: 2rem 3rem 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    html{
+        font-size: 9px;
+    }
+    .we_box{
+        flex-direction: column-reverse;
+    }
+    .we_image{
+        width: 100%;
+    }
+    .we_text{
+        width: 100%;
+    }
+    .we_image-top{
+        margin: 1.5rem 0 0 -0.5rem;
+    }
+    .involved_box{
+        flex-direction: column-reverse;
+    }
+    .involved_text{
+        width: 100%;
+    }
+    .involved_design{
+        width: 60%;
+        margin: 0 auto 2rem;
+    }
+    .btn_more {
+        margin: 1rem 3rem 2rem 0;
+    }
+    .donate_box{
+        flex-direction: column;
+    }
+    .donate_options{
+        width: 70%;
+    }
+    .founder{
+        flex-direction: column;
+    }
+    .founder_text{
+        width: 100%;
+    }
+    .founder_image{
+        width: 80%;
+        margin: 0 auto 1.5rem 0;
+    }
+    .footer_icon{
+        width: 2rem;
+    }
+    /* .donate_text{
+        font-size: 7rem;
+    }
+    .btn_more{
+        margin: 2rem 3rem 0;
+    } */
+  }
+
+  @media screen and (max-width: 390px) {
+    .involved_header {
+        font-size: 4.6rem;
+    }
+  }
+  @media screen and (max-width: 330px) {
+    .footer_box{
+        flex-direction: column;
+    }
+    .footer_icon{
+        margin: 1rem 0 0;
+    }
+    .involved_header {
+        font-size: 3.6rem;
+    }
+  }
