@@ -322,9 +322,12 @@ body{
     align-items: center;
 }
 
-.donate_text{
-    font-size: 8.5rem;
+.donate_header{
+    font-size: 3.5rem;
     font-family: avant;
+}
+.donate_text{
+    width: 55%;
 }
 
 .donate_btn{
@@ -424,10 +427,11 @@ body{
         font-size: 9px;
     }
     .we_box{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .we_image{
         width: 100%;
+        margin: 0 0 2rem;
     }
     .we_text{
         width: 100%;
@@ -448,12 +452,24 @@ body{
     .btn_more {
         margin: 1rem 3rem 2rem 0;
     }
+    .donate{
+        background-color: #101C4F;
+        padding: 5rem 0;
+    }
+
     .donate_box{
         flex-direction: column;
+        /* width: 85%; */
     }
     .donate_options{
-        width: 70%;
+        width: 90%;
     }
+
+    .donate_text{
+        width: 100%;
+        margin: 0 0 2rem;
+    }
+
     .founder{
         flex-direction: column;
     }
@@ -505,7 +521,8 @@ body{
         /* text-decoration: none;
         color: inherit;
         font-size: 1rem; */
-        margin: .5rem 0;
+        margin: 1rem 0;
+        font-size: 1.5rem;
     }
 
     .nav_item{
