@@ -311,7 +311,7 @@ body{
 /* styling for donate */
 .donate{
     background-color: #101C4F;
-    padding: 5rem 5.5rem;
+    padding: 5rem 0;
 }
 
 .donate_box{
@@ -327,7 +327,7 @@ body{
     font-family: avant;
 }
 .donate_text{
-    width: 55%;
+    width: 48%;
 }
 
 .donate_btn{
@@ -451,10 +451,6 @@ body{
     }
     .btn_more {
         margin: 1rem 3rem 2rem 0;
-    }
-    .donate{
-        background-color: #101C4F;
-        padding: 5rem 0;
     }
 
     .donate_box{
