@@ -417,7 +417,7 @@ body{
         flex-direction: column;
         width: 100%;
         margin: 1rem 0 ;
-        text-align: center;
+        text-align: left;
         background-color: #101C4F;
         position: absolute;
         left: -100%;
